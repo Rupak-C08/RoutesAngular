@@ -1,0 +1,43 @@
+.not-found-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.error-code {
+  font-size: 8rem;
+  margin: 0;
+  color: #e74c3c;
+  line-height: 1;
+}
+
+.error-message {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #2c3e50;
+}
+
+.description {
+  color: #7f8c8d;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+}
+
+.back-home {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-home:hover {
+  background-color: tomato;
+}
