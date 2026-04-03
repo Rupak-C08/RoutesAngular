@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+.header{
+    display: flex;
+    justify-content: space-between;
+    color: tomato;
+}
+.header ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.header ul li{
+    padding: 5px 10px;    
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: tomato;
+}
+.active{
+    font-weight: bold;
+    color: red;
+}

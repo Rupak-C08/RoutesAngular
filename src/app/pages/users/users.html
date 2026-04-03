@@ -1,0 +1,10 @@
+<h1>Users</h1>
+<ul>
+    @for (item of users(); track item.id) {
+      <li>
+        <a [routerLink]="['/user-detail', item.id]">
+         {{ item.name }}
+        </a>
+      </li>
+    }
+</ul>

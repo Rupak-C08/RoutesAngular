@@ -1,3 +1,22 @@
 <p>home works!</p>
 <button (click)="goToProfile()">Go to profile</button>
+<br/>
 <a [routerLink]="['/profile']" [queryParams]="{name: 'Rupak', age: 25, id: 1}">Go to Rupak's profile</a>
+
+<hr/>
+<a [routerLink]="['/about', 'Bob']">Go to Bob's about</a>
+<br/>
+<a [routerLink]="['/about', 'Rupak', '28']">Go to Rupak's about</a>
+<br/>
+<a [routerLink]="['/about', userDetail().name, userDetail().age]">Go to {{userDetail().name}}'s about</a>
+<br/>
+<button (click)="goToAbout()">Go to about</button>
+<hr/>
+<div class="header">
+<ul>
+  <li><a routerLinkActive="active" routerLink="/deals">Deal</a></li>
+  <li><a routerLinkActive="active" routerLink="/offers">Offers</a></li>
+</ul>
+</div>
+
+<router-outlet></router-outlet>
